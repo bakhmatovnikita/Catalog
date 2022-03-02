@@ -1,0 +1,87 @@
+.сatalogList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -16px;
+  width: 100%;
+  max-width: 980px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.сatalogItem {
+  box-shadow: 3px 4px 8px rgb(165 169 176 / 50%);
+  border-radius: 1.5%;
+  width: 31%;
+  background: #fff;
+  height: 470px;
+
+  position: relative;
+  display: inline-block;
+  margin-top: 1.167%;
+  margin-bottom: 1.167%;
+}
+.image {
+  margin: 0px 0 69px 0;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: auto;
+}
+.saleItem {
+  width: 200px;
+  height: 50pxpx;
+  background: #fff;
+  border-radius: 2px;
+  margin: 10px 0 0 0;
+}
+.saleOpt {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.saleBasket {
+  width: 200px;
+  height: 38px;
+  margin-bottom: 19px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  background: rgb(133, 113, 245);
+  box-shadow: 0 -3px rgb(160, 126, 252) inset;
+  transition: 0.2s;
+}
+.saleBasket:hover {
+  background: rgb(114, 55, 250);
+}
+.saleBasket:active {
+  background: rgb(158, 122, 243);
+  box-shadow: 0 3px rgb(114, 106, 233) inset;
+}
+
+.buttonOutline {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 654px) {
+  .сatalogList {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .сatalogItem {
+    width: 70%;
+  }
+}

@@ -1,0 +1,73 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  -webkit-box-shadow: -2px -5px 8px -4px rgba(14, 4, 242, 0.35) inset;
+  -moz-box-shadow: -2px -5px 8px -4px rgba(14, 4, 242, 0.35) inset;
+  box-shadow: -2px -5px 8px -4px rgba(14, 4, 242, 0.35) inset;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.7), rgba(255, 255, 0, 0.01)),
+    url(https://st4.depositphotos.com/3102403/31469/v/950/depositphotos_314690158-stock-illustration-machine-learning-line-seamless-pattern.jpg);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 1080px;
+  margin: auto;
+  height: 60px;
+}
+.numberOfPositions {
+  width: 17px;
+  height: 33px;
+  font-size: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #7a75f324;
+  padding: 7px;
+  margin-left: 13px;
+}
+.basket {
+  margin-bottom: -28px;
+  width: 55px;
+}
+.catalogButton {
+  width: 110px;
+  position: absolute;
+  right: 0;
+  margin-right: 150px;
+  margin-top: 10px;
+  height: 36px;
+  margin-bottom: 19px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  border-radius: 26px;
+  background: rgb(70 84 253);
+  box-shadow: 0 -2px rgb(160 126 252) inset;
+  transition: 0.2s;
+}
+.catalogButton:hover {
+  background: rgb(114, 55, 250);
+}
+.catalogButton:active {
+  background: rgb(158, 122, 243);
+  box-shadow: 0 3px rgb(114, 106, 233) inset;
+}
+@media (max-width: 654px) {
+  .catalogButton {
+    width: 66px;
+    font-size: 12px;
+    margin-right: 51px;
+  }
+}
+@media (max-width: 654px) {
+  .headerlogo {
+    width: 170px;
+    align-items: center;
+  }
+}

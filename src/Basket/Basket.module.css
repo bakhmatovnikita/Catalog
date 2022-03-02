@@ -1,0 +1,224 @@
+.basketWrapper {
+  background: #fbfeffb5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 200vh;
+  margin-top: 60px;
+}
+.basket {
+  position: absolute;
+  top: 0;
+  margin-top: 60px;
+}
+.basketModal {
+  width: 704px;
+  height: 752px;
+  background-color: #ffffff;
+  padding: 32px;
+  overflow: auto;
+}
+.basketTotal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.basketNull {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.basketTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdfe2;
+  padding-bottom: 20px;
+  font-size: 23px;
+}
+.basketTitleCloseIcon {
+  position: relative;
+  padding: 10px;
+  width: 21px;
+  height: 22px;
+  cursor: pointer;
+}
+.closeIcon {
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  background-color: black;
+  height: 100%;
+}
+.closeIconOne {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.closeIconTwo {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.basketItemWrapper {
+  padding: 15px 0px;
+  border-bottom: 1px solid #dcdfe2;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.basketItemImg {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.basket-item-image {
+  width: 77px;
+}
+.basketItemImgText {
+  display: flex;
+  flex-direction: column;
+}
+.basketItemImgText p {
+  color: black;
+}
+.basketItemImgText div {
+  font-weight: 700;
+  font-size: 14px;
+}
+.basketItemActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.basketItemCountInput {
+  width: 53px;
+  height: 36px;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  border: 1px solid #dcdfe2;
+  border-radius: 4px;
+}
+.basketItemCount {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.totalSum {
+  font-size: 18px;
+}
+.buttonCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  background-color: #dcdfe2;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+.basketItemPrice {
+  font-weight: 700;
+  margin-right: 32px;
+}
+.basketItemDelete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.basketItemDeleteItem {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+.basketItemDeleteOne {
+  transform: rotate(-45deg);
+}
+.basketItemDeleteTwo {
+  transform: rotate(45deg);
+}
+.basket-form-title {
+  font-weight: 700;
+}
+.basketFormDoubleInput {
+  display: flex;
+  justify-content: space-between;
+}
+.firstInput {
+  margin-right: 34px;
+}
+.basketFormInput {
+  border: none;
+  border: 1px solid #c4c7ca;
+  border-radius: 4px;
+  padding: 12px 13px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  width: 100%;
+}
+.basketCheckboxes {
+  margin-top: 10px;
+}
+.basketCheckboxesTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.basketCheckboxesFlex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.basketCheckboxesFlex input {
+  margin-right: 10px;
+}
+.basketCheckboxesFlex div {
+  font-size: 16px;
+}
+.basketCheckboxesSubmit {
+  width: 240px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background: rgb(133, 113, 245);
+  box-shadow: 0 -3px rgb(160, 126, 252) inset;
+  transition: 0.2s;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.basketCheckboxesSubmit:hover {
+  background: rgb(114, 55, 250);
+}
+.basketCheckboxesSubmit:active {
+  background: rgb(158, 122, 243);
+  box-shadow: 0 3px rgb(114, 106, 233) inset;
+}
+@media (max-width: 654px) {
+  .basketItemWrapper {
+    flex-direction: column;
+  }
+  .basketFormDoubleInput {
+    flex-direction: column;
+  }
+  .basketTitle {
+    font-size: 18px;
+    text-align: center;
+  }
+}
